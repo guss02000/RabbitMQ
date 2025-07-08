@@ -23,11 +23,6 @@ Este proyecto es una API RESTful construida con **Flask** que recibe reportes de
 - RabbitMQ instalado y ejecutándose en localhost
 - pip para instalar paquetes
 
-### 2. Clonar el repositorio
-
-git clone https://github.com/tuusuario/api-hechos-delictivos.git
-cd api-hechos-delictivos
-
 ### 3. Instalar dependencias
 
 pip install flask pika
@@ -46,9 +41,6 @@ pip install -r requirements.txt
 Asegúrate de que RabbitMQ esté corriendo en tu máquina local. Si usas Docker:
 
 docker run -d --hostname rabbitmq --name rabbitmq -p 5672:5672 -p 15672:15672 rabbitmq:3-management
-
-Accede al panel en: http://localhost:15672  
-Usuario: guest | Contraseña: guest
 
 ### 5. Ejecutar la API
 
@@ -76,6 +68,8 @@ Recibe un objeto JSON con la siguiente estructura:
   "transcripción_de_video": "Se observa el hecho...",
   "transcripción_de_audio": "Se escucha un ruido fuerte..."
 }
+![image](https://github.com/user-attachments/assets/7dd3960f-afe8-40ef-82d7-3fcec7409373)
+
 
 #### Respuestas posibles
 
@@ -84,5 +78,6 @@ Recibe un objeto JSON con la siguiente estructura:
 - ⚠️ 500 Internal Server Error: Error inesperado del servidor.
 
 ## 📚 Licencia
+![image](https://github.com/user-attachments/assets/5f5380a8-166b-4adb-9b1f-3a5a2de245eb)
 
 Este proyecto está bajo la licencia MIT. Puedes usarlo, modificarlo y distribuirlo libremente.
